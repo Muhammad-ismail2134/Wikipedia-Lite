@@ -1,0 +1,11 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}{{entryTitle}} is not found{% endblock %}
+
+{% block body%}
+<div class="alert alert-danger col-lg-7 col-md-5 pt-1 pb-1 mt-2 mb-2 " role="alert"><b>{{entryTitle}}</b> is not found!</div> 
+<h2 class="mt-3">Dear user, {{entryTitle}} is new to me </h2>
+<p class="mt-2">Looks like its is not included yet.....</p>
+<p class="mt-1">Click <a href="">here</a> to add {{entryTitle}} in our library.</p>
+<hr>  
+{% endblock %}
